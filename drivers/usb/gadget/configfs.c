@@ -330,6 +330,7 @@ static ssize_t gadget_dev_desc_UDC_store(struct config_item *item,
 			goto err;
 #ifdef CONFIG_HISI_USB_CONFIGFS
 		gadget_unlink_functions(gi);
+		kfree(name);
 #endif
 	} else {
 		if (gi->udc_name) {
