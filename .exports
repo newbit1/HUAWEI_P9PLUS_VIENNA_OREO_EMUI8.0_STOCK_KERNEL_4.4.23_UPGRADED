@@ -1,0 +1,12 @@
+export PATH=$PATH:$(pwd)/../aarch64-linux-android-4.9/bin
+export CROSS_COMPILE=$(pwd)/../aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export KBUILD_BUILD_USER=android
+export KBUILD_BUILD_HOST=localhost
+echo "possible commands are"
+echo "make ARCH=arm64 distclean"
+echo "rm ../out -Rf && make clean && make mrproper && mkdir ../out"
+echo "make ARCH=arm64 O=../out merge_hi3650_defconfig"
+echo 'time make ARCH=arm64 O=../out -j$(nproc)'
+echo "make ARCH=arm64 O=../out xconfig"
+
+#git clone -b android-4.4-o --single-branch https://github.com/aosp-mirror/kernel_common.git common

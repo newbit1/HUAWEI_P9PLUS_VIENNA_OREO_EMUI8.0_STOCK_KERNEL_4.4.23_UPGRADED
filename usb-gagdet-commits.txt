@@ -1,0 +1,151 @@
+980193e294c0a00d95c87a58b1c1188d53e258a3 Thu Jan 28 12:33:42 2021 +0300: USB: gadget: legacy: fix an error code in eth_bind()
+f42ee7b59d019b62817a17c416f52a8a48a616d1 Thu Jan 14 00:09:51 2021 -0800: usb: udc: core: Use lock when write to soft_connect
+c8b7359f207d548d8f898d7491c35d05b2feba0a Mon Jan 18 21:36:15 2021 +0100: usb: bdc: Make bdc pci driver depend on BROKEN
+efe368207643ee5fe68533391a8cfe84099d4a6d Wed Dec 2 18:32:20 2020 +0530: usb: gadget: Fix spinlock lockup on usb_function_deactivate
+55dfcc212bf9e879223d528fd6d4114ff122ecee Tue Nov 17 17:29:55 2020 +0800: USB: gadget: legacy: fix return error code in acm_ms_bind()
+725675bcaa4e89d997052e6c8b8207cde2c3dbb1 Thu Dec 10 10:01:48 2020 +0800: usb: gadget: function: printer: Fix a memory leak for interface descriptor
+f6acfff9684702e2e25c5defa32bd68ebe866c26 Mon Dec 21 18:35:28 2020 +0100: usb: gadget: f_uac2: reset wMaxPacketSize
+5068143748c3835c94ed44d8369f8fdc39e03ab2 Sun Jan 3 22:42:17 2021 +0100: usb: gadget: select CONFIG_CRC32
+857cb3589b774c05c4c60158c027b4756faa6629 Tue Dec 15 17:15:38 2020 +0000: ANDROID: usb: f_accessory: Avoid bitfields for shared variables
+92e7c5139e8405e958a797125ed0ca64986055b1 Tue Dec 15 13:47:00 2020 +0000: ANDROID: usb: f_accessory: Remove useless assignment
+b2e4fc9fa5b46bad7fe7fa58f5f1cddb64ff8eba Tue Dec 15 13:39:54 2020 +0000: ANDROID: usb: f_accessory: Remove stale comments
+c43a86f22961dbe86491b9515a2114a94dd41cea Wed Apr 4 11:02:28 2018 +0530: ANDROID: USB: f_accessory: Check dev pointer before decoding ctrl request
+441921e19aeddce10cf041aa7b9cf00b97a88419 Fri Dec 18 17:43:10 2020 +0800: ANDROID: usb: gadget: f_accessory: fix CTS test stuck
+ad43e1e768a73a0e1bbaaf233321edfb7684564f Fri Dec 4 06:24:49 2020 +0000: USB: dummy-hcd: Fix uninitialized array use in init()
+b0e4a1bc9fbef3fb9e2f793b6236ac0151687c00 Mon Nov 30 12:34:53 2020 -0800: usb: gadget: f_fs: Use local copy of descriptors for userspace copy
+71e893cf15d2466696360d39a50d7a722bdae648 Fri Oct 2 18:01:55 2020 +0300: usb: gadget: goku_udc: fix potential crashes in probe
+25c95c6bd4dc50a3c20de0fa7f450ea02b2320fc Fri Jun 5 11:05:33 2020 +0800: usb: gadget: function: printer: fix use-after-free in __lock_acquire
+7374679c684fb88f37ead0e49da8f0536734d6f5 Wed Aug 19 01:19:49 2020 +0900: usb: gadget: u_ether: enable qmult on SuperSpeed Plus as well
+95dbb259370d441d7bc0695f8f9618df35842a5e Wed Jul 22 13:07:42 2020 -0400: bdc: Fix bug causing crash after multiple disconnects
+d2685958d1407cae838bfcc587fb7c7317dcf79f Tue Jul 21 23:15:58 2020 +0300: usb: gadget: net2280: fix memory leak on probe error handling paths
+149797d5eccc3a39a5227fd557aab21735c17cba Fri Jun 26 16:17:47 2020 +0300: usb: gadget: udc: gr_udc: fix memleak on error handling path in gr_ep_init()
+5cc76477e1b9d619239ba07fbb34bd48c80c3344 Mon Jul 6 13:14:55 2020 +0800: usb: gadget: function: fix missing spinlock in f_uac1_legacy
+560070052ccb1a1ec2ed7ccf2b0c00691ea5f514 Thu May 28 20:35:54 2020 +0200: usb: gadget: udc: atmel: fix uninitialized read in debug printk
+ea8532dd6fb6befe355d027fe51cc8d560fa1bce Mon Jun 15 14:27:19 2020 +0300: usb: gadget: udc: Potential Oops in error handling code
+4e26dd5e3f6746efbc681824360e680b02b76174 Fri May 22 23:06:25 2020 -0500: usb: gadget: fix potential double-free in m66592_probe.
+c16f825fb0a34439414aab5b8f4a30b35656300e Thu May 21 16:13:00 2020 +0100: usb: gadget: lpc32xx_udc: don't dereference ep pointer before null check
+8537aebb89b68f187f79ceaef8be7ac4315eeab5 Thu Apr 23 09:29:24 2020 -0700: USB: gadget: udc: s3c2410_udc: Remove pointless NULL check in s3c2410_udc_nuke
+8b4e7d93453f8ea8972bae9fc7398170b9bee111 Thu Jun 21 17:22:46 2018 +0200: usb: gadget: f_uac2: fix error handling in afunc_bind (again)
+9eb66304c94d7866b77234a485e93c1b0339a088 Fri Apr 3 22:16:51 2020 +0900: usb: gadget: legacy: fix redundant initialization warnings
+dea7c8ebf7303544b04e28ffd8ec120b26550208 Thu May 7 05:13:32 2020 +0000: usb: gadget: legacy: fix error return code in cdc_bind()
+82fc349bfd8bfea57ad4174cac6c8851a0a05c13 Thu May 7 05:13:23 2020 +0000: usb: gadget: legacy: fix error return code in gncm_bind()
+2f0919d6788f841b3333959080ac1a344ec146b1 Sun May 3 12:47:07 2020 +0200: usb: gadget: audio: Fix a missing error return value in audio_bind()
+6dfdd767cffb4f3437cea6f300bc11e1be104fe9 Mon Apr 27 20:04:23 2020 +0200: usb: gadget: net2272: Fix a memory leak in an error handling path in 'net2272_plat_probe()'
+c18a8b0d7b8fdb299bcfab2feb9c0f410580794a Sun May 10 05:43:34 2020 +0000: USB: gadget: fix illegal array access in binding with UDC
+982c4970fd125cd14b847cb0c7c13bb026673704 Wed Aug 24 14:33:27 2016 +0300: usb: gadget: udc: core: don't starve DMA resources
+2a5cb80e3eb14b3b2152f93d7bffe4b5c7d2fdc3 Tue Jun 21 12:01:11 2016 +0200: usb: gadget: pch_udc: reorder spin_[un]lock to avoid deadlock
+f2f8b4655a89a914732a21c362d7379138728675 Fri Mar 18 16:55:37 2016 +0200: usb: gadged: pch_udc: get rid of redundant assignments
+bb630aaad7d62600821897abdbb8207d2ba451b2 Tue Mar 1 12:47:11 2016 +0100: usb: gadget: f_acm: Fix configfs attr name
+256a901c81f69d7e4e8c967f205b0f3bd9159f70 Sat Mar 28 18:12:46 2020 -0700: usb: gadget: udc: bdc: Remove unnecessary NULL checks in bdc_req_complete
+a9cc048e97d4a7c397c70419b167f910fd75ac49 Thu Apr 2 10:15:21 2020 +0530: usb: f_fs: Clear OS Extended descriptor counts to zero in ffs_data_reset()
+927bfe33e202d53b6d79d43eba2899bfb7378482 Mon Feb 3 18:05:32 2020 -0800: usb: gadget: composite: Inform controller driver of self-powered
+0a5849f103e2faa161b6e6840c27c8b1dd1f4844 Thu Mar 26 17:26:20 2020 +0530: usb: gadget: f_fs: Fix use after free issue as part of queue failure
+13684ec1e913847fa2aedae7b739336d96143c5d Sun May 22 11:08:13 2016 +0200: usb: gadget: printer: Drop unused device qualifier descriptor
+0f207c5613e43e4d62c77ec0e3190be42cf76657 Sun May 22 11:08:14 2016 +0200: usb: gadget: uac2: Drop unused device qualifier descriptor
+01810010bcb8600fe756826e9929cff061bf77d2 Wed Jan 29 14:21:46 2020 +0300: usb: gadget: serial: fix Tx stall after buffer overflow
+c47c9df735826dedefb275e248d5c041e01d0f80 Thu Jan 16 15:29:01 2020 +0200: usb: gadget: ffs: ffs_aio_cancel(): Save/restore IRQ flags
+9e55d0dd07c7c6f7ccb35ecbebd08079ff107902 Wed Dec 18 11:43:49 2019 +0800: usb: gadget: udc: fix possible sleep-in-atomic-context bugs in gr_probe()
+e5288d1379b56aa1b92972cebb7011255e4cd145 Thu Jan 9 13:17:22 2020 +0000: usb: gadget: f_ecm: Use atomic_t to track in-flight request
+b2e19c795f58b0a516a5d7524407fb2a2c82cba1 Thu Jan 9 13:17:21 2020 +0000: usb: gadget: f_ncm: Use atomic_t to track in-flight request
+e1057e28b674e24ecfbce8821625d98d6298b1a3 Mon Dec 23 08:47:35 2019 +0200: usb: gadget: legacy: set max_speed to super-speed
+ebff557aca6bcc2beefc16ec6cac60de00262554 Tue Dec 3 23:34:56 2019 -0800: usb: gadget: fix wrong endpoint desc
+a501c2136bea86f0fb0bdcbe2f83eb5575798a6b Wed Oct 30 03:40:46 2019 +0000: usb: gadget: configfs: Fix missing spin_lock_init()
+f2278b83bbd6b49d1e0981f4ffbe51e18967bac0 Sat Aug 10 10:42:48 2019 +0200: usb: gadget: u_serial: add missing port entry locking
+c3f29441b1035c23f5ae1d775d2a09c97ceb6a04 Sat Sep 15 11:04:40 2018 +0800: usb: gadget: udc: fotg210-udc: Fix a sleep-in-atomic-context bug in fotg210_get_status()
+cc3ec27ddebedbb76f8a3c586ecc3461e14a2cef Fri Aug 10 15:44:57 2018 +0300: usb: gadget: uvc: Only halt video streaming endpoint in bulk mode
+e47af9e7c8f168a429df7ba111b907fffd6d253c Fri Aug 10 15:42:03 2018 +0300: usb: gadget: uvc: Factor out video USB request queueing
+66fc927508a01f133ac164d637800c198834ab35 Tue May 29 21:02:12 2018 +0200: usb: gadget: uvc: configfs: Prevent format changes after linking header
+3adae6c6d3f4997f611751310b8df42166ea96d1 Thu Aug 2 00:14:00 2018 +0300: usb: gadget: uvc: configfs: Drop leaked references to config items
+ef4590495118b05727f936622ce0d9813ba1901f Tue Oct 1 13:16:48 2019 +0530: usb: gadget: composite: Fix possible double free memory bug
+8748e69e7e3dccc622709a9771751a63fe39f26c Fri Oct 4 20:10:54 2019 +0300: usb: gadget: udc: atmel: Fix interrupt storm in FIFO mode.
+260f8a60277530a4066b184d519533791c70d10b Mon Oct 21 18:21:51 2019 +0800: usb: fsl: Check memory resource before releasing it
+ebcfd766cde61695c444e1b0e723b4bb4426c0fc Mon Oct 14 14:18:30 2019 -0500: usb: udc: lpc32xx: fix bad bit shift operation
+0d86daeb00168cf574117e9dddab23c96ca6ab2c Thu Sep 5 04:11:57 2019 +0000: USB: dummy-hcd: fix power budget for SuperSpeed mode
+c66c6ac3ff15a7b3ec6986217a1f2c0ec2cac743 Fri Jul 26 14:59:03 2019 +1000: usb: gadget: composite: Clear "suspended" on reset/disconnect
+3dae85a803a265c65e6032cd68a13fb717d766d9 Fri Mar 23 17:00:38 2018 +0000: USB: gadget: f_midi: fixing a possible double-free in f_midi
+4ccd0644719f1929c5ae6deba69e0e2da9c3dc56 Tue Dec 1 18:31:01 2015 +0000: usb: gadget: f_midi: fail if set_alt fails to allocate requests
+959c7313967990e5a9eff4604abaa8bff4e6f8f9 Mon Jun 3 19:05:28 2019 +0200: usb: gadget: Zero ffs_io_data
+b60e30e56dc769f3aa7e1d79ccb4369079999e13 Tue Jun 18 08:39:06 2019 +0000: usb: gadget: ether: Fix race between gether_disconnect and rx_submit
+8978dce0c235a0550634da9c8294dc03a8e784d5 Wed May 22 14:07:36 2019 +0200: usb: gadget: udc: lpc32xx: allocate descriptor with GFP_ATOMIC
+53f1c783ecc036904fa756f75bb557b7f9c2c2d8 Tue May 28 20:17:54 2019 +0800: usb: gadget: fusb300_udc: Fix memory leak of fusb300->ep[i]
+fd1f90b4fa8384f1bc5872ed6646966f2cef2d54 Mon Mar 18 09:18:34 2019 +0100: usb: gadget: net2272: Fix net2272_dequeue()
+61fb6fa9b32bc89a88e44faec9f61ae05e69ebf0 Mon Mar 18 09:18:33 2019 +0100: usb: gadget: net2280: Fix net2280_dequeue()
+4ff888ea38c1228386db2e56a7168ce173616fc3 Tue Mar 19 19:12:03 2019 +0100: usb: gadget: net2280: Fix overrun of OUT messages
+13e84cdbd790a9a567dcb6f206f755e20162ff43 Wed Jun 29 14:34:21 2016 +0530: usb: gadget: rndis: free response queue during REMOTE_NDIS_RESET_MSG
+0752035a776efeaf615e9ebc0d94dafd1f209898 Wed Jul 27 10:03:19 2016 +0800: usb: gadget: configfs: add mutex lock before unregister gadget
+a12cf3214235681a347a53c93378479caab3f404 Thu Jun 30 17:10:23 2016 +0800: usb: gadget: Add the gserial port checking in gs_start_tx()
+36be44e1905d593402d373aa35b48ceec9ae46f0 Fri Jul 1 15:33:28 2016 +0800: usb: gadget: composite: fix dereference after null check coverify warning
+8751b9509990fe4d5faa7affdf77fc6374055a1e Fri Dec 21 23:42:52 2018 +0300: usb: gadget: Potential NULL dereference on allocation error
+b0f59c3d1fc63f58dada13e7ba2b7a0b54559d43 Tue Jan 22 15:28:08 2019 -0600: usb: gadget: udc: net2272: Fix bitwise and boolean operations
+026e6bd1a41b375b40c013ee9e1dfa8afba3859d Sun Nov 25 00:17:07 2018 +0200: USB: omap_udc: fix USB gadget functionality on Palm Tungsten E
+09542b329dbf6dc12f3d7590adfe02429791cf49 Sun Nov 25 00:17:06 2018 +0200: USB: omap_udc: fix omap_udc_start() on 15xx machines
+39d5919321d360227862a08a0788b205d9335b14 Sun Nov 25 00:17:05 2018 +0200: USB: omap_udc: fix crashes on probe error and module removal
+a20d7a308fa2191256c1734499c7fb85a5e6f92d Sun Nov 25 00:17:04 2018 +0200: USB: omap_udc: use devm_request_irq()
+43daa3c4d1d711744b9db3448745479c3c737b26 Thu Sep 7 16:14:31 2017 +0200: usb: gadget: dummy: fix nonsensical comparisons
+87f8db65811b5bdb7686d0e53fab486d9fc2fff8 Tue Oct 16 12:16:45 2018 +0200: usb: gadget: storage: Fix Spectre v1 vulnerability
+68a318670c663cac76ac359784d2f58d8d19cfc7 Wed Aug 16 14:30:10 2017 -0600: usb: gadget: serial: fix oops when data rx'd after close
+093da71c6ead5dd84b590262e64e2ff381349acf Tue Aug 7 14:44:48 2018 +0300: usb: gadget: fotg210-udc: Fix memory leak of fotg210->ep[i]
+f409f34070299081b243aab0405b151cce28f6db Wed Aug 8 11:20:39 2018 -0400: USB: net2280: Fix erroneous synchronization change
+801a35b0963c1d1af581486ac0461ad41cea6a6f Mon Jul 2 23:46:47 2018 +0200: usb: gadget: f_uac2: fix endianness of 'struct cntrl_*_lay3'
+68f4f658ef0a1d49b13de2ae991b13a93df675e6 Wed Jun 20 11:55:08 2018 +0800: usb: gadget: r8a66597: Fix a possible sleep-in-atomic-context bugs in r8a66597_queue()
+9ffc4d3233da61a674c6e6bff122346e7d7fa679 Wed Jun 20 11:54:53 2018 +0800: usb: gadget: r8a66597: Fix two possible sleep-in-atomic-context bugs in init_controller()
+3c29ae7ce74b4a3fa9719c4ccc244b59c0906a65 Fri May 25 17:24:57 2018 +0800: usb: gadget: composite: fix delayed_status race condition when set_interface
+c420866afc161203d17f1fcd965a27a61ef70dd4 Mon Jul 2 12:48:08 2018 -0700: usb: gadget: f_fs: Only return delayed status when len is 0
+825c1ae065a4cb167946f98da626e8ab7014afd3 Sun Dec 31 18:59:42 2017 -0800: usb: gadget: composite: fix incorrect handling of OS desc requests
+345c799ac5a780384e5844c2e72f91415342a6c8 Tue Feb 6 09:50:40 2018 +0100: usb: gadget: udc: change comparison to bitshift when dealing with a mask
+aa8141daf044cb2fa4fc87538fd883e61c1790bb Fri Jan 12 11:05:02 2018 +0100: usb: gadget: ffs: Execute copy_to_user() with USER_DS set
+3fb5102f9a312b60bc6569bf5451de14683d1912 Fri Jan 12 11:26:16 2018 +0100: usb: gadget: ffs: Let setup() return USB_GADGET_DELAYED_STATUS
+7576d958f4d1674190d562158c8ce53530c47ebf Mon Feb 12 00:14:42 2018 +0100: usb: gadget: fsl_udc_core: fix ep valid checks
+36e393b0592cc8657b7363cd5fa2862985f10a63 Fri Jan 12 18:43:32 2018 +0000: usb: gadget: f_uac2: fix bFirstInterface in composite gadget
+51748a86dd5dc5ef789acf9e5522fe7ffc417d41 Thu Jan 19 18:55:28 2017 +0100: usb: gadget: f_hid: fix: Prevent accessing released memory
+3b48ece37e1320cdc15117e0377f04ddc3efb0a7 Mon Aug 8 21:30:06 2016 +0100: usb: gadget: align buffer size when allocating for OUT endpoint
+022a60e3bfe302985f136d793661d1d624880ddc Mon Aug 8 21:30:05 2016 +0100: usb: gadget: change len to size_t on alloc_ep_req()
+0446437c8bb63e03e05fa0024abc1bb27eaf037c Tue Nov 10 17:52:05 2015 +0000: usb: gadget: define free_ep_req as universal function
+5a876e8742b709ed4d3db068fe453515609e0402 Thu Jun 15 14:39:22 2017 +0530: usb: gadget: bdc: 64-bit pointer capability check
+a52a0a6c908a83166f490e0983b7fbad92ea338c Tue Jan 23 09:35:14 2018 +0000: USB: gadget: udc: Add missing platform_device_put() on error in bdc_pci_probe()
+e7c4718ff04741e29d46d3e7a7ed5e03fadccc21 Fri Mar 24 04:06:11 2017 +0800: usb: gadget: dummy_hcd: Fix wrong power status bit clear/reset in dummy_hub_control()
+551ea59081c0a5c3053c432b7ad18877b36f57d4 Fri Mar 2 19:20:07 2018 +0800: usb: gadget: f_fs: Fix use-after-free in ffs_fs_kill_sb()
+1bfe362d84b8133343402598642f32bc866a87d3 Tue Mar 7 00:57:20 2017 +0100: usb: gadget: uvc: Missing files for configfs interface
+e598cdd240a071888dd8ac485233b5da7a609f29 Fri Mar 10 15:39:32 2017 -0600: usb: gadget: udc: remove pointer dereference after free
+0c8496bfdb0e69fb91152af253b29946b148da7f Wed Mar 8 16:05:44 2017 +0200: usb: gadget: f_uvc: Sanity check wMaxPacketSize for SuperSpeed
+5c6db4afbd9f951674777d040d60dfffc831ee67 Sun Nov 26 06:52:53 2017 +0000: usb: gadget: ffs: Forbid usb_ep_alloc_request from sleeping
+ef21f3a12bb1ea9da69167c7f4644ed22b73af27 Tue Feb 21 22:33:11 2017 +0100: USB: gadgetfs: Fix a potential memory leak in 'dev_config()'
+ac94abbb7941933946bbb7ce9aca7365fa7d5e74 Sat Sep 30 08:55:55 2017 -0700: usb: gadget: composite: Fix use-after-free in usb_composite_overwrite_options
+2fff3c5c2be733b16674efe9522d824dfc39038f Fri Oct 6 10:27:44 2017 -0400: USB: dummy-hcd: Fix deadlock caused by disconnect detection
+2efab2c3a3ae18a6fe33d958230c480f7268e235 Fri Apr 14 19:12:07 2017 +0800: usb: gadget: mass_storage: set msg_registered after msg registered
+e84b4a008365b7edbd842a063ae28d040a98db25 Tue Sep 26 15:15:49 2017 -0400: USB: dummy-hcd: Fix erroneous synchronization change
+d1a0787b5a244418d340901753aa49783ab53a90 Tue Sep 26 15:15:40 2017 -0400: USB: dummy-hcd: fix infinite-loop resubmission bug
+d25a65e03f1815130753031f17648802f8f42407 Tue Sep 26 15:15:22 2017 -0400: USB: dummy-hcd: fix connection failures (wrong speed)
+86377bf330898f0db850b65b371c2e4843cadf3c Thu Aug 31 14:51:40 2017 +0200: usb: gadget: udc: atmel: set vbus irqflags explicitly
+f72264e79ae74c845f9af8e2fdda86075afd0331 Thu Sep 21 16:12:01 2017 -0400: USB: gadgetfs: fix copy_to_user while holding spinlock
+d20fff0b09d9c74584ced0221c8a5eabf7e1423c Thu Sep 21 13:23:58 2017 -0400: USB: gadgetfs: Fix crash caused by inadequate synchronization
+c2eb312f3137d85a715af3f9009246b98e7ba993 Fri Dec 11 22:13:55 2015 +0100: usb: gadget: inode.c: fix unbalanced spin_lock in ep0_write
+967ca302456550859bfea3cda9971a3035b6889f Fri Jul 21 14:58:16 2017 -0700: ANDROID: usb: gadget: assign no-op request complete callbacks
+7ea3cc440ec9f3c53fdc54f59248d19f2d29106c Mon Jan 2 17:28:39 2017 -0600: usb: gadget: Fix copy/pasted error message
+f5dc61753d0e27705ff79813f0f0714fd5bd37bb Tue Jun 13 15:23:42 2017 -0400: USB: gadgetfs, dummy-hcd, net2280: fix locking for callbacks
+42c8b4b5fdca31b47d2c55e716f651e2600690ca Wed May 10 18:18:25 2017 +0200: USB: gadget: dummy_hcd: fix hub-descriptor removable fields
+6ff96a61bb20eddf8a2814b8bf55172885fad405 Thu May 11 17:26:48 2017 -0700: usb: gadget: f_mass_storage: Serialize wake and sleep execution
+73661512d284dac703ffbeca68c675cebd648110 Tue Mar 10 11:27:10 2015 +0800: ANDROID: usb: f_mtp: return error code if transfer error in receive_file_work function
+4f8785184972bf230383dfbbda3e1c0b21dc2312 Wed Feb 24 10:47:12 2016 +0000: ANDROID: usb: gadget: f_audio_source: disable the CPU C-states upon playback
+69a14c17de7edbaa354d56bbd25718a6e2cd6089 Sat Feb 13 11:08:37 2016 +0100: ANDROID: usb: gadget: f_mtp: Set 0xFFFFFFFF in mtp header ContainerLength field
+5709321fd962842da490b36b8881f2c96b04608d Wed Mar 9 19:39:30 2016 +0000: usb: gadget: f_midi: Fixed a bug when buflen was smaller than wMaxPacketSize
+8a8a8007871acae231ca5dba49f648d64326e919 Wed Mar 8 16:05:43 2017 +0200: usb: gadget: f_uvc: Fix SuperSpeed companion descriptor's wBytesPerInterval
+19f0fe67b9d04580c377efc568cc8630a5af06b4 Tue Mar 14 12:09:56 2017 +0100: ACM gadget: fix endianness in notifications
+f52e71a12e80643225e7b6faf9b4dc171229af39 Fri Aug 12 20:38:10 2016 -0400: usb: gadget: f_accessory: Fix for UsbAccessory clean unbind.
+c4bac4300ff62daf1fc4ba4c541dbdc3537d9035 Sun Mar 12 08:21:32 2017 +0000: usb: gadget: udc: fsl: Add missing complete function. am: 80190fcc48
+80190fcc48f68b321e3fe65a1526da1ce2e3e6ba Wed Jan 25 22:07:59 2017 +0100: usb: gadget: udc: fsl: Add missing complete function.
+6e1c2455aa286eec7579615883fb5ea7ecac8853 Thu Nov 17 02:32:40 2016 -0500: ANDROID: usb: gadget: function: Fix commenting style
+9cf89ade1afd450a5ff25ee65acbebb94b011287 Wed Jan 18 00:57:44 2017 +0000: usb: gadget: f_fs: Assorted buffer overflow checks.
+adf640eaefac688af0584f3a8e6acf4be5e3aa52 Wed Sep 28 12:33:31 2016 +0300: usb: gadget: composite: always set ep->mult to a sensible value
+96a21e702606f0c908b17c85de99b06d53a420ef Tue Dec 20 19:52:16 2016 +0100: usb: gadget: composite: Test get_alt() presence instead of set_alt()
+bd4e78bbc93f629fce57cbc0932a4ec9a03f9e77 Wed Dec 14 14:55:56 2016 -0500: USB: dummy-hcd: fix bug in stop_activity (handle ep0)
+f6ff9981743c5daea3a22a4d0f6d8c842072db69 Fri Dec 9 15:24:24 2016 -0500: USB: gadgetfs: fix checks of wTotalLength in config descriptors
+74e36bffe645ba71e60f89d36256100c9cbdeb04 Fri Dec 9 15:18:43 2016 -0500: USB: gadgetfs: fix use-after-free bug
+fe75330a27fcd9fe180242857f27e8c1b9bf920d Fri Dec 9 15:17:46 2016 -0500: USB: gadgetfs: fix unbounded memory allocation bug
+10a4380ea14591c01fb0faffbffdd7316110611b Tue Dec 6 08:36:29 2016 +0100: usb: gadgetfs: restrict upper bound on device configuration size
+8ede2d7908aa9970979ef5e5fc95d3d69976d353 Wed Sep 28 10:38:11 2016 +0300: usb: gadget: composite: correctly initialize ep->maxpacket
+c67c2ed829f3854c1df95ca53bbfdfc9c906d510 Tue Nov 8 10:10:44 2016 +0800: usb: gadget: f_uac2: fix error handling at afunc_bind
+0a60e50f0b910612c3f9560fc3a791e70d146b0b Tue Aug 11 12:34:45 2015 +0530: usb: gadget: f_mtp: simplify ptp NULL pointer check
+96009ab737c4e6da44a0fff72d33534583454d03 Thu Sep 15 16:05:40 2016 +0530: ANDROID: usb: gadget: audio_source: fix comparison of distinct pointer types
+b5f881a43e5986a60d81af8bdd9e7f470fdd95f9 Fri Jul 15 14:15:47 2016 +0300: usb: gadget: fsl_qe_udc: signedness bug in qe_get_frame()
+1a8cf46bbfcc2eac1db8cfcc9c3b0596b9ee1d66 Thu Apr 14 17:01:17 2016 +0200: UPSTREAM: usb: gadget: f_fs: Fix use-after-free

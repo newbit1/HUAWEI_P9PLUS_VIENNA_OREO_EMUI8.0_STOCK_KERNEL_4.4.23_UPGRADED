@@ -1,0 +1,24 @@
+#!/bin/bash
+function yes_or_no {
+    while true; do
+        read -p "$* [y/n]: " yn
+        case $yn in
+            [Yy]*) return 0  ;;
+            [Nn]*) echo "Aborted" ; return  1 ;;
+            *) return 0  ;;            
+            
+        esac
+    done
+}
+~/android/AIK-Linux/cleanup.sh
+KERNELIMG=AL10StockKernel_repacked.img
+cp $KERNELIMG ~/android/AIK-Linux/
+~/android/AIK-Linux/unpackimg.sh $KERNELIMG
+cp ../out/arch/arm64/boot/Image.gz ~/android/AIK-Linux/split_img/$KERNELIMG-zImage
+~/android/AIK-Linux/repackimg.sh
+
+yes_or_no "Press Any Key If you want to reboot into bootloader via ADB" && adb wait-for-usb-device && adb reboot bootloader
+
+read -p "Press Enter when in bootloader to continue" </dev/tty
+sudo fastboot flash kernel ~/android/AIK-Linux/image-new.img
+sudo fastboot reboot

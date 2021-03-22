@@ -1,0 +1,19 @@
+#!/bin/bash
+cleanup() {
+	echo "cleaning up"
+	rm -f -R "$1" &
+    pids=" $!"
+	wait $pids || { echo "there were errors" >&2; exit 1; }
+}
+cd ..
+cleanup aarch64-linux-android-4.9
+wait
+VER=r17c
+wget https://dl.google.com/android/repository/android-ndk-$VER-linux-x86_64.zip
+unzip android-ndk-$VER-linux-x86_64.zip android-ndk-$VER/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/* 2&>/dev/null
+mv android-ndk-$VER/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 aarch64-linux-android-4.9 && rm -Rf android-ndk-$VER 2&>/dev/null
+cleanup android-ndk-$VER-linux-x86_64.zip
+wait
+cd - 2&>/dev/null
+
+
