@@ -65,6 +65,12 @@ do {									\
 
 #endif /* DUMP_MSGS */
 
+/* Max Number of User Data Sectors
+ * approx 4.7GB
+ * -> 4.700.372.992 Bytes / 2048 Blocksize
+ * -> 2295104 Sectors */
+#define MAX_NUMBER_SECTORS	0x230540
+
 /* Length of a SCSI Command Data Block */
 #define MAX_COMMAND_SIZE	16
 
