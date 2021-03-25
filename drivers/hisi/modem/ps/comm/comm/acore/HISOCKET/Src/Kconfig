@@ -219,7 +219,7 @@ source "net/sched/Kconfig"
 source "net/dcb/Kconfig"
 
 config RPS
-	boolean
+	bool
 	depends on SMP && SYSFS && USE_GENERIC_SMP_HELPERS
 	default y
 
@@ -256,7 +256,7 @@ config NET_TCPPROBE
 	module will be called tcp_probe.
 
 config NET_DROP_MONITOR
-	boolean "Network packet drop alerting service"
+	bool "Network packet drop alerting service"
 	depends on INET && EXPERIMENTAL && TRACEPOINTS
 	---help---
 	This feature provides an alerting service to userspace in the

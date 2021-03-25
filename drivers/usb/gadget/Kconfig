@@ -128,7 +128,7 @@ config USB_GADGET_STORAGE_NUM_BUFFERS
 	   If unsure, say 2.
 
 config HISI_USB_FUNC_ADD_SS_DESC
-	boolean "USB Gadget functions support superspeed"
+	bool "USB Gadget functions support superspeed"
 	default y
 	help
 	  USB Gadget functions support superspeed.
@@ -403,28 +403,28 @@ config USB_CONFIGFS_F_FS
 	  mass storage) and other are implemented in user space.
 
 config USB_CONFIGFS_F_MTP
-	boolean "MTP gadget"
+	bool "MTP gadget"
 	depends on USB_CONFIGFS
 	select USB_F_MTP
 	help
 	  USB gadget MTP support
 
 config USB_CONFIGFS_F_PTP
-	boolean "PTP gadget"
+	bool "PTP gadget"
 	depends on USB_CONFIGFS && USB_CONFIGFS_F_MTP
 	select USB_F_PTP
 	help
 	  USB gadget PTP support
 
 config USB_CONFIGFS_F_ACC
-	boolean "Accessory gadget"
+	bool "Accessory gadget"
 	depends on USB_CONFIGFS
 	select USB_F_ACC
 	help
 	  USB gadget Accessory support
 
 config USB_CONFIGFS_F_AUDIO_SRC
-	boolean "Audio Source gadget"
+	bool "Audio Source gadget"
 	depends on USB_CONFIGFS && USB_CONFIGFS_F_ACC
 	depends on SND
 	select SND_PCM
@@ -433,7 +433,7 @@ config USB_CONFIGFS_F_AUDIO_SRC
 	  USB gadget Audio Source support
 
 config USB_CONFIGFS_UEVENT
-	boolean "Uevent notification of Gadget state"
+	bool "Uevent notification of Gadget state"
 	depends on USB_CONFIGFS
 	help
 	  Enable uevent notifications to userspace when the gadget
